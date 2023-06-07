@@ -8,7 +8,7 @@ A detailed step-by-step of how to setup, build, and deploy EfficientDet network 
 4. Internet Connection.
 
 # Clone this Repository
-$ git clone 
+$ git clone https://github.com/peterchondro/imx8mplus.efficientdet.git
 
 # Dependencies
 Please install the following libraries:

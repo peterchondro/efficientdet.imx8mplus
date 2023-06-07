@@ -7,6 +7,9 @@ A detailed step-by-step of how to setup, build, and deploy EfficientDet network 
 3. Other Supporting Cables.
 4. Internet Connection.
 
+# Clone this Repository
+$ git clone 
+
 # Dependencies
 Please install the following libraries:
 ### Base Dependencies Installation
@@ -42,6 +45,10 @@ $ chmod +x ~/flatbuffers/flatc
 ```
 $ https://github.com/tensorflow/tensorflow.git
 $ bazel build --config=elinux_aarch64 -c opt //tensorflow/lite:libtensorflowlite.so
+```
+### OpenCV Installation
+```
+
 ```
 
 # Get Pretrained Model

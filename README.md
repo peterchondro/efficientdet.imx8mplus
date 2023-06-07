@@ -35,6 +35,6 @@ $ git clone https://github.com/google/flatbuffers.git
 $ cd flatbuffers
 $ cmake -G "Unix Makefiles"
 $ make
-$ sudo ln -s /full-path-to-flatbuffer/flatbuffers/flatc /usr/local/bin/flatc
-$ chmod +x /full-path-to-flatbuffer/flatbuffers/flatc
+$ sudo ln -s ~/flatbuffers/flatc /usr/local/bin/flatc
+$ chmod +x ~/flatbuffers/flatc
 ```

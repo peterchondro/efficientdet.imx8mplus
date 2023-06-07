@@ -34,8 +34,9 @@ $ wget -O - https://apt.kitware.com/keys/kitware-archive-latest.asc 2>/dev/null 
 $ sudo apt-add-repository 'deb https://apt.kitware.com/ubuntu/ bionic main'
 $ sudo apt-get update
 $ sudo apt-get install cmake
-$ git clone https://github.com/google/flatbuffers.git 
-$ cd flatbuffers
+$ wget -0 v23.5.8.zip https://github.com/google/flatbuffers/archive/refs/tags/v23.5.8.zip
+$ unzip v23.5.8.zip
+$ cd v23.5.8
 $ cmake -G "Unix Makefiles"
 $ make
 $ sudo ln -s ~/flatbuffers/flatc /usr/local/bin/flatc

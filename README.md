@@ -39,8 +39,8 @@ $ unzip flatbuffers-23.5.8.zip
 $ cd flatbuffers-23.5.8
 $ cmake -G "Unix Makefiles"
 $ make
-$ sudo ln -s ~/flatbuffers/flatc /usr/local/bin/flatc
-$ chmod +x ~/flatbuffers/flatc
+$ sudo ln -s ~/flatbuffers-23.5.8/flatc /usr/local/bin/flatc
+$ chmod +x ~/flatbuffers-23.5.8/flatc
 ```
 ### TensorFlow Installation
 ```

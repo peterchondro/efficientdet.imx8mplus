@@ -21,7 +21,7 @@ $ sudo apt install apt-transport-https curl gnupg -y
 $ curl -fsSL https://bazel.build/bazel-release.pub.gpg | gpg --dearmor >bazel-archive-keyring.gpg
 $ sudo mv bazel-archive-keyring.gpg /usr/share/keyrings
 $ echo "deb [arch=amd64 signed-by=/usr/share/keyrings/bazel-archive-keyring.gpg] https://storage.googleapis.com/bazel-apt stable jdk1.8" | sudo tee /etc/apt/sources.list.d/bazel.list
-$ sudo apt update && sudo apt install bazel
+$ sudo apt update && sudo apt install bazel-6.1.0
 ```
 ### Flatbuffers Installation
 ```
@@ -38,3 +38,15 @@ $ make
 $ sudo ln -s ~/flatbuffers/flatc /usr/local/bin/flatc
 $ chmod +x ~/flatbuffers/flatc
 ```
+### TensorFlow Installation
+```
+$ https://github.com/tensorflow/tensorflow.git
+$ bazel build --config=elinux_aarch64 -c opt //tensorflow/lite:libtensorflowlite.so
+```
+
+# Get Pretrained Model
+Once all dependencies had been installed, you may download your pretrained model as follows:
+```
+$ ./setup_tflite.sh -m d0 INT8
+```
+You can find your model in ```models/<model>```. If you want to quantized your model for FP16 or FP32 instead of INT8, you would need to change the syntax. 

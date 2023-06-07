@@ -59,6 +59,7 @@ $ cmake -DOPENCV_EXTRA_MODULES_PATH=../opencv_contrib-4.x/modules ../opencv-4.x
 $ cmake --build .
 $ sudo make install
 $ export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/usr/local/lib
+$ sudo ln -s /usr/local/include/opencv4/opencv2 /usr/include/
 ```
 
 # Get Pretrained Model
